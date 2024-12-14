@@ -82,6 +82,8 @@ Contributions are always welcome! To contribute:
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
+### Read in [Portuguese PT-BR](README-PT-BR.md)
+
 ---
 
 <p align="center">Made with ❤️ by Marcelo Galdino</p>
