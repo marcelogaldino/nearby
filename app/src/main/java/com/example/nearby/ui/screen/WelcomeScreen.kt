@@ -19,7 +19,8 @@ import com.example.nearby.ui.component.welcome.WelcomeHeader
 
 @Composable
 fun WelcomeScreen(
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    onNavigateToHome: () -> Unit
 ) {
     Column(
         modifier = modifier
@@ -34,7 +35,7 @@ fun WelcomeScreen(
         NearbyButton(
             modifier = Modifier.fillMaxWidth(),
             text = "Começar",
-            onClick = {}
+            onClick = onNavigateToHome
         )
     }
 }
@@ -42,5 +43,5 @@ fun WelcomeScreen(
 @Preview
 @Composable
 private fun WelcomeScreenPreview() {
-    WelcomeScreen()
+    WelcomeScreen(onNavigateToHome = {})
 }
