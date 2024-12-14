@@ -1,4 +1,4 @@
-package com.example.nearby.ui.screen
+package com.example.nearby.ui.screen.splash
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -40,7 +40,7 @@ fun SplashScreen(modifier: Modifier = Modifier, onNavigateToWelcome: () -> Unit)
 }
 
 @Composable
-fun LaunchedEffect(key1: Unit, content: @Composable () -> Unit) {
+fun LaunchedEffect(key1: Boolean, content: @Composable (() -> Unit)) {
     TODO("Not yet implemented")
 }
 

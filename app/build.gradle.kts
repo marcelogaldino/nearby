@@ -53,6 +53,11 @@ android {
 
 dependencies {
 
+    implementation(libs.zxing)
+    implementation(libs.zxing.android.embedded)
+    implementation(libs.coil.network.okhttp)
+    implementation(platform(libs.ktor.bom))
+    implementation(libs.bundles.ktor.client)
     implementation(libs.kotlin.serialization)
     implementation(libs.navigation.compose)
     implementation(libs.coil.compose)

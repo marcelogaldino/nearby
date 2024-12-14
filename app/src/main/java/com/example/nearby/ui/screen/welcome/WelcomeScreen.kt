@@ -1,4 +1,4 @@
-package com.example.nearby.ui.screen
+package com.example.nearby.ui.screen.welcome
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -18,17 +18,14 @@ import com.example.nearby.ui.component.welcome.WelcomeContent
 import com.example.nearby.ui.component.welcome.WelcomeHeader
 
 @Composable
-fun WelcomeScreen(
-    modifier: Modifier = Modifier,
-    onNavigateToHome: () -> Unit
-) {
+fun WelcomeScreen(modifier: Modifier = Modifier, onNavigateToHome: () -> Unit) {
     Column(
         modifier = modifier
             .background(Color.White)
-            .padding(horizontal = 40.dp, vertical = 48.dp)
             .fillMaxSize()
+            .padding(horizontal = 40.dp, vertical = 48.dp)
             .verticalScroll(state = rememberScrollState()),
-        verticalArrangement =  Arrangement.SpaceBetween
+        verticalArrangement = Arrangement.SpaceBetween
     ) {
         WelcomeHeader()
         WelcomeContent()
